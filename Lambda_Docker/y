@@ -1,0 +1,13 @@
+version = 0.1
+[y]
+[y.deploy]
+[y.deploy.parameters]
+stack_name = "knn"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1e3a63h3zwgw5"
+s3_prefix = "knn"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "Stage=\"dev\""
+image_repositories = ["PredictFunction=045503060267.dkr.ecr.us-east-1.amazonaws.com/knn83de0ffd/predictfunction975a0b7frepo"]
